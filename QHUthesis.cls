@@ -342,9 +342,9 @@
 \captionsetup[figure]{labelsep=space}
 \renewcommand{\tablename}{表} %表题头
 \renewcommand{\figurename}{图} %图题头
-\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}} %使图编号为7.1的格式 
-\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}%使表编号为7.1的格式
-\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}%使公式编号为7.1的格式
+\renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}} %使图编号为7-1的格式 
+\renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}%使表编号为7-1的格式
+\renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}%使公式编号为7-1的格式
 \renewcommand{\thesubfigure}{(\alph{subfigure})}%使子图编号为(a)的格式
 \renewcommand{\thesubtable}{(\alph{subtable})} %使子表编号为(a)的格式
 \newcommand{\makeappedixfigtabnum}{\setcounter{equation}{0}
