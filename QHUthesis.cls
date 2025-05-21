@@ -20,6 +20,8 @@
 
 \LoadClass[a4paper,UTF8,openany,oneside]{ctexbook}
 \RequirePackage{ctex}
+
+
 %\RequirePackage{xeCJK}
 %\setCJKmainfont[AutoFakeBold=1.3, ItalicFont={KaiTi}]{FangSong} %仿宋伪粗体，并使用\fangsong命令
 %\renewcommand{\fangsong}{\rmfamily}
@@ -41,7 +43,7 @@
 %========双语标题设置
 \RequirePackage{caption}
 \RequirePackage{bicaption}
-\captionsetup[figure][bi-second]{name=Fig} %设置图的英文编号前缀
+\captionsetup[figure][bi-second]{name=Fig.} %设置图的英文编号前缀
 \captionsetup[table][bi-second]{name=Table} %设置表的英文编号前缀
 
 %参考文献引用上标格式
@@ -148,9 +150,9 @@
 \setlength{\cftbeforesubsecskip}{0pt} %三级标题间隔
 
 %目录章标题字体样式
-\renewcommand\cftchapfont{\songti\zihao{4}}
-\renewcommand\cftsecfont{\songti\zihao{4}}
-\renewcommand\cftsubsecfont{\songti\zihao{4}}
+\renewcommand\cftchapfont{\songti\zihao{-4}}
+\renewcommand\cftsecfont{\songti\zihao{-4}}
+\renewcommand\cftsubsecfont{\songti\zihao{-4}}
 \renewcommand\cftchappagefont{\mdseries}
 
 %%%
@@ -263,8 +265,9 @@
 }
 
 \newcommand{\statement}{%
+	\vspace{1cm} % 在“诚信责任书”前面空一行
 	\begin{center}
-		\songti\zihao{3}诚信责任书
+		\textbf{\songti\zihao{3}诚信责任书} % 加粗“诚信责任书”
 	\end{center}
 	\vspace{1.5cm}
 	\begin{spacing}{1.885}
